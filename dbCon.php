@@ -1,6 +1,6 @@
 <?php
 //local database
-$servername = 'localhost';
+$servername = 'mysql-service';
 $username = 'root';
 $password = '';
 $db_name = 'library';
