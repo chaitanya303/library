@@ -20,7 +20,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['view_roll_no'])) {
         header("Location: books-record.php?student_class=$student_class&view_roll_no=$roll_no");
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9956e41f29fde5a9e0ff73b720ad5c156dd1bda3
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['delete_roll_no'])) {
     $delete_roll_no = $_GET['delete_roll_no'];
     $student_class = $_GET['student_class'];
