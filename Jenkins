@@ -4,7 +4,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo 'Cloning Repository'
-                git branch: 'main', url: 'https://github.com/Divakar7474/Library-management-system.git'
+                git branch: 'main', url: 'https://github.com/chaitanya303/library.git'
             }
         }
         stage('Install Dependencies') {
@@ -18,7 +18,7 @@ pipeline {
                 php -r "if (!extension_loaded('mysqli')) exit(1);"
                 if %ERRORLEVEL% neq 0 (
                     echo Enabling mysqli extension...
-                    for %%F in ("php.ini", "C:\\Users\\CHAITANYA.H\\Downloads\\php.ini") do (
+                    for %%F in ("php.ini", "C:\\xampp\\php\\php.ini") do (
                         findstr /C:"extension=mysqli" "%%F" > nul || (
                             echo Updating %%F to enable mysqli...
                             echo extension=mysqli >> "%%F"
