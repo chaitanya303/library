@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: php-library-management
-        image: php-library-management-system:latest
+        image: chaitanyah3/library-management-system:latest
         imagePullPolicy: Never  # Use locally built image in Minikube
         ports:
         - containerPort: 80
