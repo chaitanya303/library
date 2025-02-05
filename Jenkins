@@ -83,8 +83,6 @@ pipeline {
             echo 'Build or Deployment failed. Check logs.'
         }
     }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 9956e41f29fde5a9e0ff73b720ad5c156dd1bda3
+
